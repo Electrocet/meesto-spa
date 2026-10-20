@@ -41,7 +41,7 @@ export function Programs({ onChoose }: Props) {
                 }
               >
                 {program.badge && (
-                  <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-moss px-3.5 py-1.5 text-[0.6875rem] font-semibold tracking-[0.12em] text-paper uppercase md:left-7 md:translate-x-0">{/* deslop-ignore 19 — бейдж-пилюли по дизайн-системе */}{program.badge}</span>
+                  <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full border border-moss/45 bg-paper px-3.5 py-1.5 text-[0.6875rem] font-semibold tracking-[0.12em] text-moss uppercase md:left-7 md:translate-x-0">{/* deslop-ignore 19 — бейдж-пилюли по дизайн-системе */}{program.badge}</span>
                 )}
                 <Icon className="mx-auto size-12 text-moss md:mx-0" />
                 <h3 className="mt-5 font-display text-2xl font-semibold">{program.name}</h3>

@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@import "@fontsource/cormorant-garamond/500.css";
+@import "@fontsource/cormorant-garamond/600.css";
+@import "@fontsource-variable/manrope";
+
+@theme {
+  --color-paper: #f6f1e9;
+  --color-surface: #fbf8f3;
+  --color-ink: #1e1b16;
+  --color-ink-soft: #5f594e;
+  --color-moss: #2e4636;
+  --color-moss-light: #3a5a45;
+  --color-line: #e4dccf;
+  --color-clay: #b4633f;
+  --color-error: #a33a2a;
+  --color-success: #3e6b4f;
+
+  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-sans: "Manrope", system-ui, -apple-system, sans-serif;
+
+  --radius-card: 20px;
+  --radius-field: 12px;
+
+  --shadow-card: 0 1px 2px rgb(30 27 22 / 0.04), 0 16px 40px -20px rgb(30 27 22 / 0.18);
+  --shadow-card-hover: 0 2px 4px rgb(30 27 22 / 0.05), 0 24px 48px -20px rgb(30 27 22 / 0.24);
+}
+
+@utility container-page {
+  margin-inline: auto;
+  max-width: 75rem;
+  padding-inline: 1.25rem;
+  @media (width >= 48rem) {
+    padding-inline: 2rem;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: var(--color-moss);
+    color: var(--color-paper);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-moss);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+# Зависимости и сборка
+node_modules/
+dist/
+.vite/
+
+# Окружение
+.env
+.env.*
+!.env.example
+
+# Внутренние документы — в публичный репозиторий не публиковать
+docs/02-STRATEGY.md
+
+# Системное
+.DS_Store
+Thumbs.db
+*.log
+
+# Кэши инструментов
+.playwright-mcp/
+.codegraph/

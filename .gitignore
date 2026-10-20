@@ -19,3 +19,7 @@ Thumbs.db
 # Кэши инструментов
 .playwright-mcp/
 .codegraph/
+.vercel/
+
+.vercel
+.env*
